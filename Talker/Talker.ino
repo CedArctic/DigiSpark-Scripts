@@ -10,7 +10,7 @@ void loop() {
   DigiKeyboard.delay(100);
   DigiKeyboard.print("powershell");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(200);
+  DigiKeyboard.delay(3000);
   DigiKeyboard.print("Add-Type -AssemblyName System.speech");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
