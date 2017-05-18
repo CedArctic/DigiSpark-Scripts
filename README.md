@@ -21,7 +21,10 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 
 >WiFi_Profile_Mailer : Writes the wireless network credentials to a csv file and emails it.
 
+>Fork_Bomb : Opens up an obfuscated windows terminal and makes it multiply itself uncontrolably causing the machine to either lock or crash.
+
 # Credits and resources:
 p0wc0w for the original WiFi Grabber and Mailer Scripts.
+BlackBoot for the original fork bomb.
 hak5darren for the USB Rubber Ducky Documentation: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
 Digistump for the DigiSpark and their documentation: https://github.com/digistump/DigisparkArduinoIntegration/blob/master/libraries/DigisparkKeyboard/DigiKeyboard.h
