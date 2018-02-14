@@ -28,3 +28,5 @@ If you're concerned about remaining undetected on the machine you've got the she
 2. Kill the powershell.exe process once you've migrated out of it.
 
 Hope you all enjoy! I know many of you will find good use of this, and as always - use responsibly!
+# Credits:
+https://github.com/PowerShellMafia/PowerSploit/
