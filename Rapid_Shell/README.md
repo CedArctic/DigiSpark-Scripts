@@ -9,6 +9,7 @@
 # Additional information:
   - You can reduce the running time by 5-8 seconds, visit this page: https://digistump.com/wiki/digispark/tricks
   - The powershell script features a 6 seconds screensaver to hide the backdooring process, we will make it possible to disable/enable in the future.
+  - If the keyboard layout of the targetted machine is not in QWERTY/English you can use the bash script on a linux machine to convert text from AZERTY <--> QWERTY and vice versa.
   
 # Known issues:
 
