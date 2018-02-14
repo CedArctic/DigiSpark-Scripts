@@ -2,6 +2,7 @@
 #!/bin/bash
 
 #az_qw_convert.sh - Enhanced by NBN - (Case sensitive input)
+#Dependencies: sed
 
 echo "Do you want to convert :\n\n1. QWERTY to AZERTY\n2. AZERTY to QWERTY"; read chx
 if test "$chx" -eq "1"; then
