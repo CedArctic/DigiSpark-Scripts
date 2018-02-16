@@ -7,7 +7,11 @@
 - Exposed time: 15 seconds (means in 50% of time since plugging in the Digispark, the screen will have movement)
 
 # Additional information:
-  - You can reduce the running time by 5-8 seconds, visit this page: https://digistump.com/wiki/digispark/tricks
+  #### How it works:
+   The Digispark once it is plugged in will take 5 seconds for the bootloader, and starts its job when the second led lights up, it will first open CMD as administrator using the start menu and create a new file which will be used to trigger the attack and open the shell.
+   There is another way to open CMD as administrator, which is using the run prompt and running this command: "powershell Start-Process cmd -Verb runA" but it showed that it takes much time to open the powershell prompt. If you desire to use this method refer to the comments in the code.
+   #### Tricks:   
+  - You can reduce the running time by 5-8 seconds by tricking the bootloader, visit [this page](https://digistump.com/wiki/digispark/tricks) for more.
   - The powershell script features a 6 seconds screensaver to hide the backdooring process, we will make it possible to disable/enable in the future.
   - If the keyboard layout of the target machine is not in QWERTY/English you can use the bash script on a linux machine to convert text from AZERTY <--> QWERTY and vice versa.
   
