@@ -7,16 +7,10 @@ void setup() {
   // Initialize the digital pin as an output.
   pinMode(1, OUTPUT); //LED on Model A
 }
-// Infinite loop
-void loop() {
-
-  DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.delay(500);
-  digitalWrite(1, HIGH); // LED on <--> Action start
-// BEGIN - Open CMD in Administrator Privileges
+void cmd_1() {
   DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT);
   DigiKeyboard.delay(1500);
-  DigiKeyboard.print("cmd");
+  DigiKeyboard.print("c;d");
   DigiKeyboard.delay(1500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER, MOD_CONTROL_LEFT | MOD_SHIFT_LEFT);
   DigiKeyboard.delay(1000);
@@ -24,7 +18,26 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ARROW_LEFT);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-// END - Open CMD in Administrator Privileges
+}
+void cmd_2() {
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  DigiKeyboard.delay(500);
+  DigiKeyboard.println("powershell  Start-Process cmd -Verb runAs");
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.sendKeyStroke(KEY_ARROW_LEFT);
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+}
+// Infinite loop
+void loop() {
+
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(500);
+  digitalWrite(1, HIGH); // LED on <--> Action start
+  cmd_1(); // Open CMD in Administrator Privileges using METHOD 1 (UNCOMMENT TO USE)
+  //cmd_2(); // Open CMD in Administrator Privileges using METHOD 2 (UNCOMMENT TO USE)
   DigiKeyboard.delay(1500);
   DigiKeyboard.println("MODE CON: COLS=15 LINES=1");
   DigiKeyboard.delay(250);
