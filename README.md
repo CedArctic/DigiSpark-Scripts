@@ -23,8 +23,19 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 
 >Fork_Bomb : Opens up an obfuscated windows terminal and makes it multiply itself uncontrolably causing the machine to either lock or crash.
 
+# See the scripts in action
+
+Click the gifs to see the full video
+
+[![Wifi Stealer](https://j.gifs.com/N9KP5v.gif)](https://www.youtube.com/watch?v=b5E0u4qNH4s)
+
+[![Wallpaper Prank](https://j.gifs.com/32r7ER.gif)](https://www.youtube.com/watch?v=yHPRZnpxvks)
+
 # Credits and resources:
-p0wc0w for the original WiFi Grabber and Mailer Scripts.
-BlackBoot for the original fork bomb.
-hak5darren for the USB Rubber Ducky Documentation: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
-Digistump for the DigiSpark and their documentation: https://github.com/digistump/DigisparkArduinoIntegration/blob/master/libraries/DigisparkKeyboard/DigiKeyboard.h
+-p0wc0w for the original WiFi Grabber and Mailer Scripts.
+
+-BlackBoot for the original fork bomb.
+
+-hak5darren for the USB Rubber Ducky Documentation: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
+
+-Digistump for the DigiSpark and their documentation: https://github.com/digistump/DigisparkArduinoIntegration/blob/master/libraries/DigisparkKeyboard/DigiKeyboard.h
