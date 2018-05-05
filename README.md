@@ -13,7 +13,7 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 
 >Wallpaper_Prank : Takes a screenshot of the desktop, sets it as the wallpaper, hides desktop icons.
 
->Talker :  Opens up powershell and speaks out a message.
+>Talker : Opens up powershell and speaks out a message.
 
 >PowerShell Script Executer : Downloads and runs a powershell script.
 
@@ -23,6 +23,10 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 
 >Fork_Bomb : Opens up an obfuscated windows terminal and makes it multiply itself uncontrolably causing the machine to either lock or crash.
 
+>Rapid_Shell : Seamlessly executes metasploit payloads through powershell.
+
+>Reverse_Shell : Opens a reverse shell in 3 seconds.
+
 # See the scripts in action
 
 Click the gifs to see the full video
@@ -31,7 +35,12 @@ Click the gifs to see the full video
 
 [![Wallpaper Prank](https://j.gifs.com/32r7ER.gif)](https://www.youtube.com/watch?v=yHPRZnpxvks)
 
-# Credits and resources:
+# Credits, contributors and resources:
+
+-samratashok for the Nishang reverse shell used in Reverse_Shell.
+
+-nassimosaz for the Rapid_Shell script.
+
 -p0wc0w for the original WiFi Grabber and Mailer Scripts.
 
 -BlackBoot for the original fork bomb.
