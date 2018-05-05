@@ -13,6 +13,6 @@ This DigiSpark script downloads and executes the Invoke-PowerShellTcpOneLine.ps1
   
 Hope you all enjoy this script and as always use it responsibly!
 
-# Credits:
+## Credits:
 - hak5: https://www.hak5.org/episodes/hak5-2110-how-to-get-a-reverse-shell-in-3-seconds-with-the-usb-rubber-ducky
 - samratashok for Nishang: https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1
