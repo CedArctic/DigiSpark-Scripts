@@ -27,6 +27,8 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 
 >Reverse_Shell : Opens a reverse shell in 3 seconds.
 
+>Window_Jammer : Spams ALT + F4 and CTRL + W key combos to force close all active windows.
+
 # See the scripts in action
 
 Click the gifs to see the full video
@@ -48,3 +50,5 @@ Click the gifs to see the full video
 -hak5darren for the USB Rubber Ducky Documentation: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
 
 -Digistump for the DigiSpark and their documentation: https://github.com/digistump/DigisparkArduinoIntegration/blob/master/libraries/DigisparkKeyboard/DigiKeyboard.h
+
+-usb.org for the USB Usage IDs on page 53: http://www.usb.org/developers/hidpage/Hut1_12v2.pdf
