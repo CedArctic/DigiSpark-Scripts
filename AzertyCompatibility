@@ -1,0 +1,25 @@
+//This base script allows the digispark to perform HID attacks on AZERTY System
+
+#include "DigiKeyboard.h"
+void setup() {
+  //empty
+}
+void loop() {
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.print(F("Zindozs pozershell"));
+  DigiKeyboard.delay(700);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(3000);
+  DigiKeyboard.print(F("Set=ZinUserLqnguqgeList =LqnguqgeList en=US =Force"));
+  DigiKeyboard.delay(700);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.print("exit");
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(300);
+  // Place your script next to this line
+  for(;;){ /*empty*/ }
+}
