@@ -17,6 +17,8 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 
 >PowerShell Script Executer : Downloads and runs a powershell script.
 
+>Wifi_Profile_Ftp: Using cmd, extracts wifi profiles and send it with ftp
+
 >WiFi_Profile_Grabber: Using cmd, extracts wifi profiles and saves the csv to the usb mounted on d:\
 
 >WiFi_Profile_Mailer : Writes the wireless network credentials to a csv file and emails it.
