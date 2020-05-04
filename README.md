@@ -18,6 +18,7 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 - **Silly_Mouse**: Switches primary and secondary mouse buttons, display mouse trails, decreases mouse speed and other mouse related pranks
 - **Talker**: Makes the computer speak out a message using powershell
 - **Wallpaper_Changer**: Downloads and applies a wallpaper via powershell.
+- **Wallpaper_Changer_macOS**: Downloads and applies a wallpaper via applescript on macOS.
 - **Wallpaper_Prank**: Takes a screenshot of the desktop, sets it as the wallpaper, hides desktop icons
 - **WiFi_Profile_Grabber**: Extracts wifi profiles and saves the csv to a USB drive
 - **WiFi_Profile_Mailer**: Writes the wireless network credentials to a csv file and emails it
@@ -41,6 +42,7 @@ Click the gifs to see the full video
 - **Michyus**
 - **Vel1khaN**
 - **slipperyavocado**
+- **bernsteining**
 
 # Resources
 
