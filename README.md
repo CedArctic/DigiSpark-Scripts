@@ -7,27 +7,22 @@ This is a set of hand-written DigiSpark sketches for the Arduino IDE that utiliz
 Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/digispark/tutorials/connecting or Seytonic's tutorial: https://youtu.be/fGmGBa-4cYQ. Then download one of scripts (sketches), open them with Arduino IDE, modify them if needed and upload them to the DigiSpark.
 
 # Script Descriptions
->RickRoll_Update : Plays Never Gonna Give you up while performing a fake windows update.
 
->WallpaperChanger : Downloads and applies a wallpaper via powershell.
-
->Wallpaper_Prank : Takes a screenshot of the desktop, sets it as the wallpaper, hides desktop icons.
-
->Talker : Opens up powershell and speaks out a message.
-
->PowerShell Script Executer : Downloads and runs a powershell script.
-
->WiFi_Profile_Grabber: Using cmd, extracts wifi profiles and saves the csv to the usb mounted on d:\
-
->WiFi_Profile_Mailer : Writes the wireless network credentials to a csv file and emails it.
-
->Fork_Bomb : Opens up an obfuscated windows terminal and makes it multiply itself uncontrolably causing the machine to either lock or crash.
-
->Rapid_Shell : Seamlessly executes metasploit payloads through powershell.
-
->Reverse_Shell : Opens a reverse shell in 3 seconds.
-
->Window_Jammer : Spams ALT + F4 and CTRL + W key combos to force close all active windows.
+- **Create_Account**: Creates a new admin account and optionally hides it
+- **DNS Poisoner**: Injects lines into the Windows hosts file and redirects URLs to wherever you want
+- **Execute_Powershell_Script**: Downloads and executes a powershell script in hidden mode
+- **Fork_Bomb**: Opens up an obfuscated windows terminal and makes it multiply itself uncontrolably causing the machine to either lock or crash
+- **Rapid_Shell**: Seamlessly executes metasploit payloads through powershell
+- **Reverse_Shell**: Opens a netcat reverse shell from a Windows machine to the host
+- **RickRoll_Update**: Plays Never Gonna Give you up while performing a fake windows update
+- **Silly_Mouse**: Switches primary and secondary mouse buttons, display mouse trails, decreases mouse speed and other mouse related pranks
+- **Talker**: Makes the computer speak out a message using powershell
+- **Wallpaper_Changer**: Downloads and applies a wallpaper via powershell.
+- **Wallpaper_Changer_macOS**: Downloads and applies a wallpaper via applescript on macOS.
+- **Wallpaper_Prank**: Takes a screenshot of the desktop, sets it as the wallpaper, hides desktop icons
+- **WiFi_Profile_Grabber**: Extracts wifi profiles and saves the csv to a USB drive
+- **WiFi_Profile_Mailer**: Writes the wireless network credentials to a csv file and emails it
+- **Window_Jammer**: Spams ALT + F4 and CTRL + W key combos to force close all active windows
 
 # See the scripts in action
 
@@ -37,18 +32,22 @@ Click the gifs to see the full video
 
 [![Wallpaper Prank](https://j.gifs.com/32r7ER.gif)](https://www.youtube.com/watch?v=yHPRZnpxvks)
 
-# Credits, contributors and resources:
+# Contributors
 
--samratashok for the Nishang reverse shell used in Reverse_Shell.
+- **samratashok**
+- **nassimosaz**
+- **p0wc0w**
+- **apsecdev**
+- **BlackBoot**
+- **Michyus**
+- **Vel1khaN**
+- **slipperyavocado**
+- **bernsteining**
 
--nassimosaz for the Rapid_Shell script.
+# Resources
 
--p0wc0w for the original WiFi Grabber and Mailer Scripts.
+- USB Rubber Ducky Documentation by hak5darren: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
 
--BlackBoot for the original fork bomb.
+- Digistump DigiSpark Documentation: https://github.com/digistump/DigisparkArduinoIntegration/blob/master/libraries/DigisparkKeyboard/DigiKeyboard.h
 
--hak5darren for the USB Rubber Ducky Documentation: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
-
--Digistump for the DigiSpark and their documentation: https://github.com/digistump/DigisparkArduinoIntegration/blob/master/libraries/DigisparkKeyboard/DigiKeyboard.h
-
--usb.org for the USB Usage IDs on page 53: http://www.usb.org/developers/hidpage/Hut1_12v2.pdf
+- USB Usage IDs by usb.org (page 53): http://www.usb.org/developers/hidpage/Hut1_12v2.pdf
