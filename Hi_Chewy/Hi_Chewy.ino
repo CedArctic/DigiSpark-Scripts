@@ -14,7 +14,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.print(F("start-sleep 300;"));
-  DigiKeyboard.print(F("irm -uri \"https://badusb.dev/tr/files/Chewbacca.wav\" -OutFile \"$env:temp\\play.wav\";"));
+  DigiKeyboard.print(F("irm -uri \"https://github.com/apsecdev/DigiSpark-Scripts/blob/master/Hi_Chewy/Chewbacca.wav\" -OutFile \"$env:temp\\play.wav\";"));
   DigiKeyboard.print(F("Add-Type -AssemblyName presentationCore;"));
   DigiKeyboard.print(F("$filepath = [uri] \"$env:temp\\play.wav\";"));
   DigiKeyboard.print(F("$wmplayer = New-Object System.Windows.Media.MediaPlayer;"));
