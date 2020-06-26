@@ -1,6 +1,7 @@
 // Fun little script to mess with your friends.
 // Opens a powershell instance that downloads a picture of a breadstick (or any other picture that you can download via a link) and copy/pastes it 300 times to the desktop.
-// The number of duplications can be chaged by editing the number on line 26 in the "foreach($number in 1..300)" where the number of duplications would be 300
+// The number of duplications can be chaged by editing the number on line 18 in the "foreach($number in 1..300)" where the number of duplications would be 300
+// To change the image to use, change the link in line 15 to one that points directly to an image file (has .jpg or .png on the end of it)
 
 #include "DigiKeyboard.h"
 
