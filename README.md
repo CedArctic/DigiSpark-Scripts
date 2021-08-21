@@ -35,7 +35,7 @@ Click the gifs to see the full video
 # Contributors
 
 - **samratashok**
-- **nassimosaz**
+- **NassimBentarka**
 - **p0wc0w**
 - **apsecdev**
 - **BlackBoot**
