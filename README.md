@@ -23,6 +23,7 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 - **WiFi_Profile_Grabber**: Extracts wifi profiles and saves the csv to a USB drive
 - **WiFi_Profile_Mailer**: Writes the wireless network credentials to a csv file and emails it
 - **Window_Jammer**: Spams ALT + F4 and CTRL + W key combos to force close all active windows
+- **MacOS_Payload**: This is an attack for Mac (OSX) machines. It opens up a terminal window, and executes the bash command. It then downloads the loader, sets it to executable, executes it, and closes the terminal window.
 
 # See the scripts in action
 
@@ -43,6 +44,7 @@ Click the gifs to see the full video
 - **Vel1khaN**
 - **slipperyavocado**
 - **bernsteining**
+- **alhazmy13**
 
 # Resources
 
