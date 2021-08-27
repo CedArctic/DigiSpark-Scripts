@@ -24,6 +24,14 @@ Configure the Arduino IDE for the DigiSpark using: https://digistump.com/wiki/di
 - **WiFi_Profile_Mailer**: Writes the wireless network credentials to a csv file and emails it
 - **Window_Jammer**: Spams ALT + F4 and CTRL + W key combos to force close all active windows
 
+>Wallpaper_Prank_Update : Makes all the desktop icons unclickable and indefinitely gives the appearance that Windows is updating
+
+>Password_Generator : Uses Bash to create a list of randomly-generated passwords and save it in the user's Downloads folder
+
+>Pinger : Opens command prompt and pings to [google.com](google.com)
+
+>WiFi_Info_Display : Opens command prompt and displays network information using ipconfig
+
 # See the scripts in action
 
 Click the gifs to see the full video
